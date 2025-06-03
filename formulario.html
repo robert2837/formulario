@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="/procesar" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej: 600123456" required><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
